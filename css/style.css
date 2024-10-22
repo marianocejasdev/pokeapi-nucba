@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/manrope.woff') format('woff'),
+        url('../assets/fonts/manrope.ttf') format('truetype');
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+
+img {
+    max-width: 100%;
+    align-self: center;
+}
+
+.container {
+    height: 100svh;
+    display: grid;
+    place-content: center;
+    background-color: #1e1b4b;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1rem;
+    border-radius: 8px;
+    background-color: #3730a3;
+    padding: 1rem 2rem;
+    color: #efeeff;
+    font-size: 1rem;
+}
+
+.pokemon-card__img {
+    width: 200px;
+}
+
+.pokemon-card__input {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.pokemon-card__button {
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #aaa5fc;
+}
+
+.pokemon-card__result {
+    margin-top: 1rem;
+}
+
+.error {
+    color: red;
+    font-weight: 700;
+}
